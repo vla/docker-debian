@@ -1,3 +1,7 @@
+# Supported tags and respective `Dockerfile` links
+
+- [ `jessie` , `latest` (8.5 Dockerfile)](https://github.com/vla/docker-debian/blob/master/Dockerfile)
+
 # About this Repo
 
 `Debian:jessie` image and installs the following extra packages:
