@@ -1,0 +1,14 @@
+language: bash
+services: docker
+
+install:
+  - docker build -t jessie .
+
+script: 
+  - docker run --name jessie_test jessie
+  - docker ps -a | grep -q  jessie_test
+
+after_script:
+  - docker rm jessie_test
+  - docker rmi jessie
+  - docker rmi xenial
